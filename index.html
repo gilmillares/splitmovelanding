@@ -18,37 +18,67 @@
   </head>
   <body class="bg-[#f8fcf8] overflow-x-hidden">
     <div class="flex min-h-screen flex-col">
-      <header class="flex items-center justify-between border-b border-[#e7f3e7] px-6 py-3">
+      <header class="flex flex-wrap items-center justify-between border-b border-[#e7f3e7] px-4 py-4 md:px-6 lg:px-10">
         <div class="flex items-center gap-3 text-[#0e1b0e]">
           <svg class="w-5 h-5" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor"></path>
           </svg>
           <h2 class="text-lg font-bold tracking-tight">SplitMove</h2>
         </div>
-        <div class="flex items-center gap-4">
+        <nav class="flex flex-wrap items-center gap-4">
           <a class="text-sm font-medium text-[#0e1b0e]" href="#">Home</a>
           <div class="flex gap-2">
             <button class="h-10 px-4 rounded-full bg-[#14b714] text-[#f8fcf8] text-sm font-bold">Sign Up</button>
             <button class="h-10 px-4 rounded-full bg-[#e7f3e7] text-[#0e1b0e] text-sm font-bold">Log In</button>
           </div>
-        </div>
+        </nav>
       </header>
 
-      <main class="flex flex-1 flex-col items-center px-4 py-8 md:flex-row md:px-20">
-        <div class="w-full md:max-w-md aspect-video bg-cover bg-center rounded-xl mb-6 md:mb-0 md:mr-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrBOiARsqftGFnMRrewEOm0FNWPezfUPf2DasFqRk__L2k-rkebGzfcYhHiNjUKKq5T3GQLtNmdXswpPoqidXfP8j8Fgn9yptr5zRR6WVB_jrRb6y-cGf3peElrYyfOjVtMDdIyVswI7vq7E2ucKsjw5P7zH6kJ0Is9quf8QOPMSqAV89EqvfaylqR7twxBYGRBvsMqF0f89C0us3qUBWMJb4HJo7PNLg63peW9E5gZNM27J0Q_lMOT7snlfgJ5srA5Tq4i6u-SQk');"></div>
-        <div class="flex flex-col gap-4 max-w-lg">
-          <h1 class="text-3xl md:text-5xl font-black text-[#0e1b0e]">Simplify Moving Out</h1>
-          <p class="text-sm md:text-base text-[#0e1b0e]">
+      <main class="flex flex-col-reverse items-center gap-6 px-4 py-8 sm:px-6 md:flex-row md:justify-between md:px-12 lg:px-20">
+        <div class="flex flex-col gap-4 max-w-xl text-center md:text-left">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-[#0e1b0e]">Simplify Moving Out</h1>
+          <p class="text-sm sm:text-base text-[#0e1b0e]">
             SplitMove is the first app designed for the way roommates actually move out. Seamlessly coordinate tasks, split expenses, and stay connected through every step of your transition.
           </p>
-          <div class="flex gap-3 flex-wrap">
-            <button class="h-10 md:h-12 px-4 md:px-5 rounded-full bg-[#14b714] text-[#f8fcf8] text-sm md:text-base font-bold">App Store</button>
-            <button class="h-10 md:h-12 px-4 md:px-5 rounded-full bg-[#e7f3e7] text-[#0e1b0e] text-sm md:text-base font-bold">Google Play</button>
+          <div class="flex flex-wrap justify-center md:justify-start gap-3">
+            <button class="h-10 sm:h-12 px-4 sm:px-5 rounded-full bg-[#14b714] text-[#f8fcf8] text-sm sm:text-base font-bold">App Store</button>
+            <button class="h-10 sm:h-12 px-4 sm:px-5 rounded-full bg-[#e7f3e7] text-[#0e1b0e] text-sm sm:text-base font-bold">Google Play</button>
           </div>
         </div>
+        <div class="w-full max-w-md aspect-video bg-cover bg-center rounded-xl" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDrBOiARsqftGFnMRrewEOm0FNWPezfUPf2DasFqRk__L2k-rkebGzfcYhHiNjUKKq5T3GQLtNmdXswpPoqidXfP8j8Fgn9yptr5zRR6WVB_jrRb6y-cGf3peElrYyfOjVtMDdIyVswI7vq7E2ucKsjw5P7zH6kJ0Is9quf8QOPMSqAV89EqvfaylqR7twxBYGRBvsMqF0f89C0us3qUBWMJb4HJo7PNLg63peW9E5gZNM27J0Q_lMOT7snlfgJ5srA5Tq4i6u-SQk');"></div>
       </main>
 
-      <footer class="text-center px-4 py-10 text-[#4e974e] text-sm">
+      <section class="px-4 py-12 sm:px-6 lg:px-20 text-center md:text-left">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0e1b0e] mb-4">Key Features</h2>
+        <p class="text-[#0e1b0e] text-base max-w-2xl mx-auto md:mx-0 mb-8">
+          Explore the core functionalities that make SplitMove the preferred choice for tenants and landlords alike.
+        </p>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfFYdUCv2dMN9zG9OxAy1Qrg_uFHa-zUQSH7d6XMWabU3MlPbDzcawM0drcPIRBLNTP6kMWLn8row2F6-_yrrs9AwzqY-vGaUuGtPaPmvHqs-YD9mJxiRDY7BrncVf9ZDPzbWKgnNvthfr9-J27E3UZO7MKKAvB8iwRk-0jYeDe8tiymNJz3wLWXXP7Kb85o7Ku3ePQdBekZK5YMOEmypSyfI_FHF9Xzr6DTv-FI1p-O_7xUZg-T8twCtpsJoS8djOZ_EZOO3SD2c');"></div>
+            <div>
+              <p class="text-[#0e1b0e] text-base font-medium leading-normal">Real-Time Data Capture</p>
+              <p class="text-[#4e974e] text-sm font-normal leading-normal">Capture and sync moving-out tasks in real-time, ensuring accuracy and eliminating manual data entry.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDc9xof13enyYZCzniVWff2_K8hv6wP3jpdYFvD1ksKNR8COOpwsitn5RgVHVCK5YLmMhBmIM_0Sc574ENAyrZLIbTE2gfMrxd0TAft5h_vH4XtfcaZfvkaKesITLMChfVbLXRAjXhDF0NfZF2FqkdWJ9qxpZxG3fn-Ys7sUHuveZrng0sea8_NDBk--sWnGpOgzf2y0w5Z4dLvf_Pf29o9Mcw_dsV4VWBJoP02NuAUWD_FvHtaDj8DEHce7WS8vDvoyuxY1LTw6rk');"></div>
+            <div>
+              <p class="text-[#0e1b0e] text-base font-medium leading-normal">Customizable Templates</p>
+              <p class="text-[#4e974e] text-sm font-normal leading-normal">Tailor checklists to meet specific requirements, enhancing flexibility and efficiency.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARePQ7RTYEBo2gXvCI_Pf8Pp1Z2fQqS8W32FbmZv_JplgSHNCPAhRHDncqPbWiA-m86bHD4j81AMeTE5P5dcYbwfxBHYuBPncGR1mKYSEW7wvGieKxzG_M37SeinW9W7D2RKV8Tp8ws-ghLfbVuMs6cV46Av0ye0-2oqPHdR8Sx_ACfTm8oVFH714Zu24sTrmpFkO6rVtaWxeYbYqwOOj3mEdYxhikCU2-wr0I0SFeffWenTnsI04cbAubVhVXD4gazMswSCQ-OYo');"></div>
+            <div>
+              <p class="text-[#0e1b0e] text-base font-medium leading-normal">Automated Reporting</p>
+              <p class="text-[#4e974e] text-sm font-normal leading-normal">Generate detailed reports automatically, saving time and improving communication with roommates and landlords.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center px-4 py-10 sm:px-6 lg:px-20 text-[#4e974e] text-sm">
         © 2025 MoveSplit. All rights reserved.
       </footer>
     </div>
